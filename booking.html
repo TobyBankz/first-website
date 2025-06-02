@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>Book Your Stay</h1>
+    <h1>Booking</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -18,35 +18,32 @@
     </nav>
   </header>
 
-  <section class="booking-hero">
-    <div class="booking-overlay">
-      <div class="booking-container">
-        <h2>Book a Room</h2>
-        <form class="booking-form" action="thankyou.html" method="POST">
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" required />
+  <section class="booking-section">
+    <h2>Book Your Stay</h2>
+    <form action="https://getform.io/f/aejlloob" method="POST" class="booking-form">
+      <!-- Hidden field to identify the form type -->
+      <input type="hidden" name="form_type" value="booking">
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+      <!-- Redirect after submission -->
+      <input type="hidden" name="_redirect" value="https://tobybankz.github.io/first-website/thankyou.html">
 
-          <label for="checkin">Check-In Date:</label>
-          <input type="date" id="checkin" name="checkin" required />
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-          <label for="checkout">Check-Out Date:</label>
-          <input type="date" id="checkout" name="checkout" required />
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-          <label for="room">Room Type:</label>
-          <select id="room" name="room" required>
-            <option value="">-- Select a Room --</option>
-            <option value="deluxe">Rooms</option>
-            <option value="view">View</option>
-            <option value="suite">Bar and Restaurant</option>
-          </select>
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" name="checkin" required>
 
-          <button type="submit" class="btn">Confirm Booking</button>
-        </form>
-      </div>
-    </div>
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <label for="special_request">Special Requests:</label>
+      <textarea id="special_request" name="special_request" placeholder="Optional message..."></textarea>
+
+      <button type="submit" class="btn">Book Now</button>
+    </form>
   </section>
 
   <footer>
