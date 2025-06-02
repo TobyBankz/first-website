@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - My First Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="lightbox/css/lightbox.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="gallery-hero">
+  <div class="room-gallery">
+    <!-- Rooms -->
+    <div class="room-card">
+      <a href="images/room1a.jpeg" data-lightbox="rooms" data-title="Rooms - View A">
+        <img src="images/room1a.jpeg" alt="Rooms" />
+      </a>
+      <a href="images/room1b.jpeg" data-lightbox="rooms" data-title="Rooms - View B" style="display: none;"></a>
+      <a href="images/room1c.jpeg" data-lightbox="rooms" data-title="Rooms - View C" style="display: none;"></a>
+      <h3>Rooms</h3>
+      <p>Luxury suites with private balconies and lounges.</p>
+    </div>
+
+    <!-- View -->
+    <div class="room-card">
+      <a href="images/View1a.jpeg" data-lightbox="view" data-title="View - A">
+        <img src="images/View1a.jpeg" alt="View" />
+      </a>
+      <a href="images/View1b.jpeg" data-lightbox="view" data-title="View - B" style="display: none;"></a>
+      <a href="images/View1c.jpeg" data-lightbox="view" data-title="View - C" style="display: none;"></a>
+      <h3>View</h3>
+      <p>Come take a good look at our Ocean View.</p>
+    </div>
+
+    <!-- Bar and Restaurant -->
+    <div class="room-card">
+      <a href="images/Bar1a.jpeg" data-lightbox="bar" data-title="Bar and Restaurant - A">
+        <img src="images/Bar1a.jpeg" alt="Bar and Restaurant" />
+      </a>
+      <a href="images/Bar1b.jpeg" data-lightbox="bar" data-title="Bar and Restaurant - B" style="display: none;"></a>
+      <a href="images/Bar1c.jpeg" data-lightbox="bar" data-title="Bar and Restaurant - C" style="display: none;"></a>
+      <h3>Bar and Restaurant</h3>
+      <p>Try our 5-star dining and oceanfront lounge.</p>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 My First Website. All rights reserved.</p>
+  </footer>
+
+  <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

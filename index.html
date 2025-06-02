@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My First Website</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Enjoy Your Stay</h2>
+      <p>Relax, unwind, and explore nature with us.</p>
+      <a href="booking.html" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-section">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>At Ziba Beach Resort, we provide a peaceful escape where you can experience the beauty of nature, ocean views, luxury rooms, and top-tier service. Whether you're here for relaxation or adventure, we’ve got you covered.</p>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mqabkknj" method="POST" class="contact-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <!-- ✅ Redirect to thankyou.html after submission -->
+      <input type="hidden" name="_next" value="thankyou.html">
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My First Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
