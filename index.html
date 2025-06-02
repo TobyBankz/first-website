@@ -18,6 +18,7 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
       <h2>Enjoy Your Stay</h2>
@@ -37,10 +38,11 @@
   <!-- Contact Us Section -->
   <section class="contact-section" id="contact">
     <h2>Contact Us</h2>
-    <form action="https://formsubmit.co/youremail@example.com" method="POST" class="contact-form">
-      <!-- Replace with your real email above -->
+    <form action="https://formsubmit.co/pulajohn@onmail.com" method="POST" class="contact-form">
+      <!-- Redirect to thank you page -->
+      <input type="hidden" name="_next" value="https://tobybankz.github.io/first-website/thankyou.html">
+      <!-- Disable Captcha -->
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://TobyBankz.github.io/thankyou.html">
 
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required>
