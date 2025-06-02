@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Booking - Ziba Beach Resort</title>
+  <title>Book a Stay | Ziba Beach Resort</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,26 +18,28 @@
     </nav>
   </header>
 
-  <section class="booking-section">
-    <h2>Book Your Stay</h2>
-    <form action="https://getform.io/f/aejlloob" method="POST" class="styled-form">
-      <input type="text" name="name" placeholder="Your Full Name" required>
-      <input type="email" name="email" placeholder="Your Email Address" required>
-      <input type="tel" name="phone" placeholder="Phone Number" required>
-      <input type="text" name="checkin" placeholder="Check-in Date (dd/mm/yyyy)" required>
-      <input type="text" name="checkout" placeholder="Check-out Date (dd/mm/yyyy)" required>
-      <select name="room" required>
-        <option value="">Select Room Type</option>
-        <option value="Standard">Standard Room</option>
-        <option value="Deluxe">Deluxe Room</option>
-        <option value="Suite">Suite</option>
-      </select>
-      <textarea name="requests" placeholder="Additional Requests (Optional)"></textarea>
+  <!-- Booking Section -->
+  <section class="booking-section" style="background-image: url('images/beach-bg.jpeg'); background-size: cover; background-position: center;">
+    <div class="form-container">
+      <h2>Book Your Stay</h2>
+      <form action="https://getform.io/f/aejlloob" method="POST" class="booking-form">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="number" name="guests" placeholder="Number of Guests" required>
 
-      <input type="hidden" name="_redirect" value="https://tobybankz.github.io/first-website/thankyou.html">
+        <label>Check-in Date:</label>
+        <input type="date" name="checkin" required>
 
-      <button type="submit" class="btn">Submit Booking</button>
-    </form>
+        <label>Check-out Date:</label>
+        <input type="date" name="checkout" required>
+
+        <!-- Redirect after submission -->
+        <input type="hidden" name="_redirect" value="https://tobybankz.github.io/first-website/thankyou.html">
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
   </section>
 
   <footer>
