@@ -13,28 +13,27 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="booking.html">Booking</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="booking-section">
     <h2>Book Your Stay</h2>
-    <form action="https://getform.io/f/aejlloob" method="POST" class="booking-form">
+    <form action="https://getform.io/f/aejlloob" method="POST" class="styled-form">
       <input type="text" name="name" placeholder="Your Full Name" required>
       <input type="email" name="email" placeholder="Your Email Address" required>
       <input type="tel" name="phone" placeholder="Phone Number" required>
-      <input type="date" name="checkin" required>
-      <input type="date" name="checkout" required>
-      <select name="room_type" required>
+      <input type="text" name="checkin" placeholder="Check-in Date (dd/mm/yyyy)" required>
+      <input type="text" name="checkout" placeholder="Check-out Date (dd/mm/yyyy)" required>
+      <select name="room" required>
         <option value="">Select Room Type</option>
-        <option value="Standard Room">Standard Room</option>
-        <option value="Deluxe Room">Deluxe Room</option>
-        <option value="Ocean View Suite">Ocean View Suite</option>
+        <option value="Standard">Standard Room</option>
+        <option value="Deluxe">Deluxe Room</option>
+        <option value="Suite">Suite</option>
       </select>
-      <textarea name="message" placeholder="Additional Requests"></textarea>
+      <textarea name="requests" placeholder="Additional Requests (Optional)"></textarea>
 
-      <!-- Redirect after submit -->
       <input type="hidden" name="_redirect" value="https://tobybankz.github.io/first-website/thankyou.html">
 
       <button type="submit" class="btn">Submit Booking</button>
