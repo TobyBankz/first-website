@@ -6,6 +6,9 @@
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #fff;
@@ -90,8 +93,10 @@ nav a:hover {
 .booking-section {
   padding: 2rem;
   background: rgba(0, 0, 0, 0.6);
-  margin: 2rem;
+  margin: 2rem auto;
   border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
 }
 
 .contact-section h2,
